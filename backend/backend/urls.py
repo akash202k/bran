@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("django_prometheus.urls")),
-    re_path(r"^bran/", include("hello.urls")),
+    path("bran/admin/", admin.site.urls),
+    path("bran/", include("django_prometheus.urls")),
+    path("bran/", include("hello.urls")),
 ]
