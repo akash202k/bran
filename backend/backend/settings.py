@@ -149,3 +149,11 @@ REST_FRAMEWORK = {
     "DATE_FORMAT": "%d/%m/%Y",
     "DATE_INPUT_FORMATS": ["%d/%m/%Y"],
 }
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://dayxcode.com",
+    "http://dayxcode.com",
+    "http://127.0.0.1:8000", 
+    "http://localhost:8000",
+]
